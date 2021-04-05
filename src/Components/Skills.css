@@ -1,0 +1,138 @@
+.skills {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+}
+.max-width {
+  color: #111;
+}
+.skills .title {
+  position: relative;
+  font-family: "Ubuntu" sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 26px;
+  text-align: center;
+}
+.skills .title::before {
+  content: "";
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.skills .title::after {
+  content: "What I Know";
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left {
+  width: 40%;
+}
+.skills .skills-content .left p {
+  text-align: justify;
+}
+.skills .skills-content .left a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover {
+  color: crimson;
+  background: none;
+}
+.skills .skills-content .left .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.skills .skills-content .right {
+  width: 50%;
+}
+.skills .skills-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .right p {
+  text-align: justify;
+}
+.skills .skills-content .right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+.skills-content .right .html::before {
+  width: 80%;
+}
+.skills-content .right .css::before {
+  width: 75%;
+}
+.skills-content .right .js::before {
+  width: 50%;
+}
+.skills-content .right .react::before {
+  width: 50%;
+}

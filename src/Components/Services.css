@@ -1,0 +1,81 @@
+.section {
+  padding: 100px 0;
+}
+
+.services {
+  color: #fff;
+  background: #111;
+  font-family: "Poppins", sans-serif;
+}
+.services .title {
+  color: #fff;
+  position: relative;
+  font-family: "Ubuntu" sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.services .title::before {
+  content: "";
+  margin-top: 50px;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 210px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.services .title::after {
+  content: "What I'd Love to Provide";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.services .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  padding: 20px 25px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+  background: crimson;
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
